@@ -126,5 +126,24 @@ public class Main{
             five.setX((int)(Math.random()*100));
         }
         //Five end
+
+        //Six start
+        Six six = new Six();
+
+        for (int i = 0; i < 10; i++) {
+            six.setX((int)(Math.random()*100+1));
+            six.setY((int)(Math.random()*100+1));
+            six.setZ((int)(Math.random()*100+1));
+
+            System.out.print(six.getMidpoint());
+            System.out.print(" is midpoint of ");
+            System.out.print(six.getX());
+            System.out.print(", ");
+            System.out.print(six.getY());
+            System.out.print(", ");
+            System.out.println(six.getZ());
+        }
+
+        //Six end
     }
 }
