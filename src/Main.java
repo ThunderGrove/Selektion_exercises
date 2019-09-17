@@ -161,5 +161,20 @@ public class Main{
            }
         }
         //Seven end
+
+        //Eight start
+        Eight eight = new Eight();
+
+        for(int i = 0;i < 10;i++){
+            eight.setEyes(i);
+            if(eight.getEyes() == 0 || eight.getEyes() > 6){
+                System.out.println("Unsupported amount of eyes");
+            } else {
+                System.out.print("There are ");
+                System.out.print(eight.getEyes());
+                System.out.println(" eyes.");
+            }
+        }
+        //Eight end
     }
 }
