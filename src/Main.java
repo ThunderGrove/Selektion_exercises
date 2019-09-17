@@ -145,5 +145,21 @@ public class Main{
         }
 
         //Six end
+
+        //Seven start
+        Seven seven = new Seven();
+
+        for(int i = 0; i < 10; i++){
+           seven.setX((int)(Math.random()*100));
+           seven.setY((int)(Math.random()*100));
+
+           int diff = seven.getDiff();
+           if(diff > 10){
+               System.out.println("The diff between X and Y is more than 10");
+           } else{
+               System.out.println("The diff between X and Y is 10 or less");
+           }
+        }
+        //Seven end
     }
 }
